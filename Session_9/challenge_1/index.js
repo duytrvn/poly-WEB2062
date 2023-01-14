@@ -39,18 +39,24 @@ const game = {
   },
 };
 
-// 1. 
-const [players1,players2] = game.players;
-console.log(players1,players2);
+// 1.
+const [players1, players2] = game.players;
+console.log(players1, players2);
 
 // 2
-const [gk,...fieldPlayers] = players1;
-console.log(gk,fieldPlayers);
+const [gk, ...fieldPlayers] = players1;
+console.log(gk, fieldPlayers);
 
 // 3
-const allPlayers = [...players1,...players2];
+const allPlayers = [...players1, ...players2];
 console.log(allPlayers);
 
 // 4
-const playersFinal = [...players1,'Thiago','Coutinho','Perisctic']
+const playersFinal = [...players1, "Thiago", "Coutinho", "Perisctic"];
 console.log(playersFinal);
+
+// 5
+const {
+  odds: { team1, x:draw, team2 },
+} = game;
+console.log(team1, draw, team2);
