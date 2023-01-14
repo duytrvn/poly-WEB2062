@@ -57,6 +57,14 @@ console.log(playersFinal);
 
 // 5
 const {
-  odds: { team1, x:draw, team2 },
+  odds: { team1, x: draw, team2 },
 } = game;
 console.log(team1, draw, team2);
+
+// 6
+const printGoals = function (...players) {
+    console.log(`${players.length} goeals were scored`);
+
+};
+printGoals("Davies", "Muller", "Lewandowski", "Kimmich");
+printGoals("David", "Muller");
