@@ -44,4 +44,5 @@ const game = {
   for(i = 0;i<game.scored.length;i++){
     console.log(`goal ${i+1}: ${game.scored[i]}`);
   }
+  game.scored.forEach(a=>console.log(a));
   
