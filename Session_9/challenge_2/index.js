@@ -38,6 +38,7 @@ const game = {
       team2: 6.5,
     },
   };
+  // 1
   for (const[i,player] of game.scored.entries()) {
     console.log(`goal ${i+1}:${player}`);
   }
@@ -45,4 +46,11 @@ const game = {
     console.log(`goal ${i+1}: ${game.scored[i]}`);
   }
   game.scored.forEach(a=>console.log(a));
-  
+  // 2
+  const oddss = Object.values(game.odds)
+  let average = 0;
+  for (const odd of oddss) {
+    average += odd;
+    average /= oddss.length;
+    console.log(average);
+  }
